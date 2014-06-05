@@ -33,7 +33,7 @@ Works with [ 2.6 / 2.7 / 3.2 / 3.3 ]
 import kickbox
 
 client   = kickbox.Client('Your_API_Key_Here')
-response = kickbox.verify("test@example.com")
+response = client.verify("test@example.com")
 ```
 
 ### Response information
