@@ -8,11 +8,11 @@ except ImportError:
 
 setup(
     name='kickbox',
-    version='1.0.0',
+    version='1.0.3',
     description='Official kickbox API library client for python',
     author='Chaitanya Surapaneni',
     author_email='chaitanya.surapaneni@kickbox.io',
-    url='https://kickbox.io',
+    url='http://kickbox.io',
     license='MIT',
     install_requires=[
         'requests >= 2.1.0'
