@@ -1,3 +1,5 @@
+import urllib
+
 class Kickbox(object):
 
     """
@@ -15,6 +17,8 @@ class Kickbox(object):
             email: Email address to verify
         """
         body = options['query'] if 'query' in options else {}
+
+        email = urllib.quote(email)
 
         response = self.client.get('/verify?email=' + email + '', body, options)
 
