@@ -11,16 +11,17 @@ class Kickbox(object):
     def verify(self, email, options={}):
         """Email Verification
 
-        '/verify?email=:email' GET
+        '/verify?email=:email&timeout=:timeout' GET
 
         Args:
             email: Email address to verify
         """
         body = options['query'] if 'query' in options else {}
 
-        email = urllib.quote(email)
+        email   = urllib.quote(email)
+        timeout = options['timeout'] if 'timeout' in options else 6000
 
-        response = self.client.get('/verify?email=' + email + '', body, options)
+        response = self.client.get('/verify?email=' + email + '&timeout=' + `timeout`, body, options)
 
         return response
 
