@@ -37,6 +37,15 @@ kickbox  = client.kickbox()
 response = kickbox.verify("test@example.com")
 ```
 
+#### Options
+
+**timeout** `integer` (optional) - Maximum time, in milliseconds, for the API to complete a verification request. Default: 6000.
+
+```python
+# Example with options
+response = kickbox.verify("test@example.com", { 'timeout': 6000 })
+```
+
 ### Response information
 
 A successful API call responds with the following values:
