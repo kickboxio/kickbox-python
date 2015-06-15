@@ -15,7 +15,8 @@ setup(
     url='http://kickbox.io',
     license='MIT',
     install_requires=[
-        'requests >= 2.1.0'
+        'requests >= 2.1.0',
+        'six >= 1.9.0'
     ],
     packages=[
         'kickbox'

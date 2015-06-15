@@ -1,4 +1,4 @@
-import urllib
+import six
 
 class Kickbox(object):
 
@@ -18,10 +18,10 @@ class Kickbox(object):
         """
         body = options['query'] if 'query' in options else {}
 
-        email   = urllib.quote(email)
+        email   = six.moves.urllib.parse.quote(email)
         timeout = options['timeout'] if 'timeout' in options else 6000
 
-        response = self.client.get('/verify?email=' + email + '&timeout=' + `timeout`, body, options)
+        response = self.client.get('/verify?email=' + email + '&timeout=' + str(timeout), body, options)
 
         return response
 
