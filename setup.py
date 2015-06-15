@@ -18,7 +18,10 @@ setup(
         'requests >= 2.1.0'
     ],
     packages=[
-        'kickbox'
+        'kickbox',
+        'kickbox.api',
+        'kickbox.error',
+        'kickbox.http_client'
     ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
