@@ -15,7 +15,8 @@ setup(
     url='http://kickbox.io',
     license='MIT',
     install_requires=[
-        'requests >= 2.1.0'
+        'requests >= 2.1.0',
+        'six >= 1.9.0'
     ],
     packages=[
         'kickbox',
@@ -32,6 +33,7 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ]
 )
