@@ -1,1 +1,1 @@
-from .client import Client
+from .api import Verification, Authentication
