@@ -23,7 +23,7 @@ class HttpClient(object):
             auth = {'http_header': auth}
 
         self.options = {
-            'base': 'https://api.kickbox.io',
+            'base': 'https://api.kickbox.com',
             'api_version': 'v2',
             'user_agent': 'kickbox-python/2.0.0 (https://github.com/kickboxio/kickbox-python)'
         }
